@@ -19,10 +19,11 @@ let package = Package(
             targets: ["SQLCipher"]),
     ],
     targets: [
-        .binaryTarget(name: "SQLCipher",
-                      url: "https://github.com/Androp0v/SQLCipher.swift/releases/download/4.0.11-raul/SQLCipher.xcframework.zip",
-                      checksum: "4c0b2899f69a4cc51cf4c8b33117f0086e29f5a6db916598da4b71ebb4d13aee"
-                     ),
+        .binaryTarget(
+            name: "SQLCipher",
+            url: "https://github.com/Androp0v/SQLCipher.swift/releases/download/4.0.11-raul/SQLCipher.xcframework.zip",
+            checksum: "2edb0ab323da0ece62fbb7ff098831771fe91ecd52faf98c8617f4152eefd5be"
+        ),
         .testTarget(
             name: "SQLCipherTests",
             dependencies: ["SQLCipher"],
